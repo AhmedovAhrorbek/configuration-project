@@ -1,0 +1,212 @@
+.admin-layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  &__left {
+    width: 250px;
+    height: 100vh;
+    padding: 20px 15px;
+    overflow-y: auto;
+    background-color: #f8fbff;
+    box-shadow: 8px 0px 22px -7px #dce3ec;
+
+    &--list {
+      padding-top: 60px;
+      padding-left: 20px;
+    }
+
+    &--item{
+      margin-bottom: 20px;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: -35px;
+        bottom: 0;
+        margin: auto;
+        background-color: #42bbff;
+        width: 4px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        height: 0;
+        transition: 0.3s linear;
+        content: "";
+      }
+
+      &:hover::after,
+      &:hover {
+        height: 100%;
+        color: #f00;
+      }
+      
+      &-link{
+            list-style-type: none;
+            color:#000;
+      }
+      &-link:hover{
+        color: #42bbff;
+      }
+    }
+
+    &--item:first-child::before {
+      width: 20px;
+      height: 16px;
+      margin-right: 20px;
+      content: url("../../Assets/icons/users-icon.svg");
+    }
+    &--item:first-child:hover {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+
+        content: url("../../Assets/icons/users-blue-icon.svg");
+      }
+    }
+
+    &--item:first-child:focus {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+
+        content: url("../../Assets/icons/users-blue-icon.svg");
+      }
+    }
+
+    &--item:nth-child(2)::before {
+      width: 20px;
+      height: 16px;
+      margin-right: 20px;
+      content: url("../../Assets/icons/uploads-icon.png");
+    }
+
+    &--item:nth-child(2):hover {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+
+        content: url("../../Assets/icons/uploads-blue-icon.png");
+      }
+    }
+    &--item:nth-child(2):focus {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+
+        content: url("../../Assets/icons/uploads-blue-icon.png");
+      }
+    }
+
+    &--item:nth-child(3)::before {
+      width: 20px;
+      height: 16px;
+      margin-right: 20px;
+      content: url("../../Assets/icons/message-icon.png");
+    }
+
+    &--item:nth-child(3):hover {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+
+        content: url("../../Assets/icons/message-blue-icon.png");
+      }
+    }
+    &--item:nth-child(3):focus {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+
+        content: url("../../Assets/icons/message-blue-icon.png");
+      }
+    }
+   
+    &--item:nth-child(4)::before {
+      width: 20px;
+      height: 16px;
+      margin-right: 20px;
+      
+      content: url("../../Assets/icons/advertisements\ \(1\).png");
+    }
+    &--item:nth-child(4):hover{
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+        content: url("../../Assets/icons//advertisements\ \(2\).png");
+      }
+    }
+    // &--item:nth-child(4):focus {
+    //   cursor: pointer;
+    //   color: #42bbff;
+    //   &::before {
+    //     width: 20px;
+    //     height: 16px;
+    //     margin-right: 20px;
+    //     content: url("../../Assets/icons/ads-blue.png");
+    //   }
+    // }
+    &--item:nth-child(5)::before {
+      width: 20px;
+      height: 16px;
+      margin-right: 20px;
+      content: url("../../Assets/icons/dashboard.png");
+    }
+    &--item:nth-child(5):hover {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+        content: url("../../Assets/icons/dashboard-blue.png");
+      }
+    }
+    &--item:nth-child(5):focus {
+      cursor: pointer;
+      color: #42bbff;
+      &::before {
+        width: 20px;
+        height: 16px;
+        margin-right: 20px;
+        content: url("../../Assets/icons/dashboard-blue.png");
+      }
+    }
+  }
+
+   .admin-layout__left--item:hover .admin-layout__left--item-link {
+     color: #42bbff;
+   }
+
+  &__right {
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+}
