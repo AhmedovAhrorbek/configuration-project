@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import {NavLink } from "react-router-dom";
 const AdminLayout = ({children}) => {
 
-    ///sjdfjsdmlskjdmdfvkldsmvkmfmvdlkfmvdlkmvldfkmv
+    
   return (
     <Fragment>
        <div className="admin-layout">
